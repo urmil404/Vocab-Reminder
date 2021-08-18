@@ -1,11 +1,12 @@
 import time
 from plyer import notification
 from playsound import playsound
-# from get_words import VocabReminder
-import get_words
+from vocab import *
+# import vocab
 
-# print(get_words.VocabReminder.word)
-# print(get_words.VocabReminder.__getattribute__('word'))
+print(vocab.word)
+
+
 exit()
 if __name__ == '__main__':
     while True:
