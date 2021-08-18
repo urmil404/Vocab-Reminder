@@ -2,19 +2,15 @@ import time
 from plyer import notification
 from playsound import playsound
 from vocab import *
-# import vocab
 
-print(vocab.word)
+# if __name__ == '__main__':
+while True:
+    word, definition, audio = VocabReminder()
 
-
-exit()
-if __name__ == '__main__':
-    while True:
-        notification.notify(
-            title=get_words.VocabReminder.word,
-            message=get_words.VocabReminder.definition,
-            app_icon="E:\\CODES\\Vocab-Reminder\\dictionary.ico",
-            timeout=12
-        )
-        #	time.sleep(6)
-        time.sleep(0.5*60)
+    notification.notify(
+        title=word,
+        message=definition,
+        app_icon="E:\\CODES\\Vocab-Reminder\\dictionary.ico",
+        timeout=12
+    )
+    time.sleep(0.050*60)
